@@ -12,17 +12,14 @@
 <p align="center">
   <a href="https://recif-platform.github.io">Website</a> •
   <a href="https://recif-platform.github.io/docs/introduction">Documentation</a> •
-  <a href="https://recif-platform.github.io/docs/quickstart">Quickstart</a> •
   <a href="https://discord.gg/P279TT4ZCp">Discord</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-alpha-orange?style=flat-square" alt="Alpha" />
+  <img src="https://img.shields.io/badge/version-v0.2.0-green?style=flat-square" alt="v0.2.0" />
   <img src="https://img.shields.io/badge/license-Apache_2.0-blue?style=flat-square" alt="License" />
   <a href="https://discord.gg/P279TT4ZCp"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
-
-> **🚀 Just launched!** Récif is in alpha — functional but evolving fast. We're looking for contributors passionate about AI agents, Kubernetes, Go, Python, or React. Come build the future of agent operations with us.
 
 ---
 
@@ -32,22 +29,40 @@
 |------|-------------|
 | [**corail**](https://github.com/recif-platform/corail) | Autonomous agent runtime — Python, 7 LLM providers, multi-channel, evaluation |
 | [**recif**](https://github.com/recif-platform/recif) | Control tower API (Go) + Dashboard (Next.js) — governance, releases, monitoring |
-| [**recif-operator**](https://github.com/recif-platform/recif-operator) | Kubernetes operator — Agent CRDs → Deployments, Services, ConfigMaps |
+| [**recif-operator**](https://github.com/recif-platform/recif-operator) | Kubernetes operator — Agent CRDs into Deployments, Services, ConfigMaps |
 | [**helm-charts**](https://github.com/recif-platform/helm-charts) | Helm charts + deployment scripts — one-command install |
 
 ### Quick Install
 
 ```bash
-helm install recif oci://ghcr.io/recif-platform/helm-charts/recif:0.1.0 \
+helm install recif oci://ghcr.io/recif-platform/helm-charts/recif --version 0.2.0 \
   --namespace recif-system --create-namespace
 ```
+
+### Roadmap
+
+| Feature | Status |
+|---------|:------:|
+| Multi-LLM (7 providers, Vertex AI native) | 🟢 |
+| Eval-driven releases (MLflow, 14 scorers) | 🟢 |
+| Canary deployments (Istio + Flagger) | 🟢 |
+| Knowledge Bases / RAG (pgvector) | 🟢 |
+| Secret management (Vault, GCP SM, AWS) | 🟢 |
+| Helm one-command install | 🟢 |
+| Agent Marketplace | 🟠 |
+| Admin / User role separation | 🟠 |
+| Multi-tenant namespaces | 🔴 |
+| MCP tool marketplace | 🔴 |
+| Cost tracking + budget alerts | 🔴 |
+
+> 🟢 Done  🟠 In progress  🔴 Planned
 
 ### What Makes Récif Different
 
 - **Eval-gated releases** — no agent ships without passing quality scores
 - **Canary deployments** — champion/challenger with auto-rollback
+- **Agent Marketplace** — publish, share, and subscribe to tested agents
 - **Framework agnostic** — ADK, LangChain, CrewAI, or custom
-- **Two access paths** — direct API + platform governance, simultaneously
 - **Kubernetes-native** — CRDs, operators, Istio mesh, Helm
 
 ### Contributing
