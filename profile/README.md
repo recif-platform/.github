@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://recif-platform.github.io/logo.png" alt="Récif" width="80" />
+  <img src="https://recif-platform.github.io/logo.png?v=2" alt="Récif" width="80" />
 </p>
 
 <h2 align="center">Récif Platform</h2>
