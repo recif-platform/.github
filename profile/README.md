@@ -21,6 +21,15 @@
   <a href="https://discord.gg/P279TT4ZCp"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
 </p>
 
+
+<p align="center">
+  <a href="https://youtu.be/9n4S8NRI1zA">
+    <img src="https://img.youtube.com/vi/9n4S8NRI1zA/maxresdefault.jpg" alt="Récif Demo" width="600" />
+  </a>
+  <br/>
+  <em>Watch the demo (2 min)</em>
+</p>
+
 ---
 
 ### Repositories
